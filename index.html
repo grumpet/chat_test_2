@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebSocket Example</title>
+
 </head>
 <body>
   <div id="snackbar"></div>
@@ -47,7 +48,7 @@
 
     try {
       // Creating an instance of the WebSocket
-      socket = new WebSocket("ws://localhost:8000/messaging");
+      socket = new WebSocket("wss://chat-2-u3lu.onrender.com/messaging");
       
       // Adding an event listener to when the connection is opened
       socket.onopen = (ws, event) => {
